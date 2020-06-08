@@ -200,6 +200,7 @@
                     </view>
                     <connections>
                         <outlet property="billTotalTextField" destination="wcN-ka-Q4F" id="adz-cR-pqa"/>
+                        <outlet property="calculateBtn" destination="FSl-VY-LBj" id="Q9e-ca-f5Y"/>
                         <outlet property="splitLabel" destination="bSy-Yc-886" id="xAd-t5-w57"/>
                         <outletCollection property="percentBtns" destination="7y6-Kf-yF0" collectionClass="NSMutableArray" id="NUr-Nz-vge"/>
                         <outletCollection property="percentBtns" destination="UtR-dU-EKt" collectionClass="NSMutableArray" id="1g8-3G-6Ih"/>
@@ -294,6 +295,7 @@
                         <viewLayoutGuide key="safeArea" id="Jmu-aI-Opa"/>
                     </view>
                     <connections>
+                        <outlet property="recalculateBtn" destination="zzn-9K-6hu" id="df5-Dx-qpf"/>
                         <outlet property="resultSubtextLabel" destination="HGt-bn-sCv" id="n0j-Mw-5kz"/>
                         <outlet property="resultValueLabel" destination="uLJ-ii-hft" id="FHr-3a-H1b"/>
                     </connections>

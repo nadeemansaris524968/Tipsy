@@ -12,6 +12,7 @@ class MainViewController: UIViewController {
     @IBOutlet weak var billTotalTextField: UITextField!
     @IBOutlet weak var splitLabel: UILabel!
     @IBOutlet var percentBtns: [UIButton]!
+    @IBOutlet weak var calculateBtn: UIButton!
     
     var tipSelected: Float = 0.1
     var splitSelected: Float = 2.0
@@ -20,6 +21,11 @@ class MainViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        calculateBtn.layer.cornerRadius = 5
     }
     
     @IBAction func tipChanged(_ sender: UIButton) {

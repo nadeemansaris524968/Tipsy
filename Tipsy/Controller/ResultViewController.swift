@@ -11,6 +11,7 @@ class ResultViewController: UIViewController {
  
     @IBOutlet weak var resultValueLabel: UILabel!
     @IBOutlet weak var resultSubtextLabel: UILabel!
+    @IBOutlet weak var recalculateBtn: UIButton!
     
     var resultValue: Float? = nil
     var resultSubtext: String? = nil
@@ -21,6 +22,7 @@ class ResultViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        recalculateBtn.layer.cornerRadius = 5
         guard let safeResultValue = resultValue else { return }
         guard let safeResultSubtext = resultSubtext else { return }
         resultValueLabel.text = String(format: "%.2f", safeResultValue)
